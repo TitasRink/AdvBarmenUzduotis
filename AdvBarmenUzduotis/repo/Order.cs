@@ -9,9 +9,11 @@ namespace AdvBarmenUzduotis.repo
     public class Order
     {
         public List<Order> Orders { get; set; }
+
         public DateTime DateNow { get; set; }
 
         public double OrderPrice { get; set; }
+
         public Order(DateTime dateNow, double orderPrice)
         {
             DateNow = dateNow;
