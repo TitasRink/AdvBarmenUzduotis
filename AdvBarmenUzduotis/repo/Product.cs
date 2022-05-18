@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace AdvBarmenUzduotis.repo
 {
-    public class Client
+    public class Product
     {
-        public int ID { get; set; }
         public string Name { get; set; }
+        public double Price { get; set; }
 
-        public Client(int id, string name) 
+        public string[] Drinks { get; set; }
+        public string[] Foods { get; set; }
+        public virtual string[] ReturnValue()
         {
-            ID = id;
-            Name = name;
+   
         }
     }
 }

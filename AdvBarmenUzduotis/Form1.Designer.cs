@@ -167,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 523);
+            this.ClientSize = new System.Drawing.Size(1095, 845);
             this.Controls.Add(this.TextBoxCheckOutput);
             this.Controls.Add(this.TextBoxFouthTableOutput);
             this.Controls.Add(this.TextBoxThirdTableOutput);

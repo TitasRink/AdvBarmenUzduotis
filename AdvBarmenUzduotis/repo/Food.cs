@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AdvBarmenUzduotis.repo
 {
-    public class Food : Order
+    public class Food : Product
     {
-        public string Meat { get; set; }
-        public Food(string meat, DateTime dateNow, double orderPrice) : base(dateNow, orderPrice)
+
+        public override string[]  ReturnValue()
         {
-            Meat = meat;
+            string result = File.ReadAllText(@"C:\temp\Food.txt");
+            Name = result.Split(';')[0];
+            Price = Convert.ToDouble(result.Split(':')[1]);
+            return Foods;
+
         }
+
     }
 }

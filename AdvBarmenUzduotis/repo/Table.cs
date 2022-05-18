@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdvBarmenUzduotis.repo
 {
-    internal class Table
+    public class Table 
     {
         public List<Table> Tables { get; set; }
         public int Number { get; set; }

@@ -12,12 +12,15 @@ namespace AdvBarmenUzduotis.repo
 
         public DateTime DateNow { get; set; }
 
-        public double OrderPrice { get; set; }
+        
 
-        public Order(DateTime dateNow, double orderPrice)
+     
+
+        public Order(DateTime dateNow)
         {
+            
             DateNow = dateNow;
-            OrderPrice = orderPrice;
+           
         }
     }
     public interface IOrderRepository
