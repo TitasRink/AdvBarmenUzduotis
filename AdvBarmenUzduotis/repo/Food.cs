@@ -13,11 +13,8 @@ namespace AdvBarmenUzduotis.repo
         public override string[]  ReturnValue()
         {
             string result = File.ReadAllText(@"C:\temp\Food.txt");
-            Name = result.Split(';')[0];
-            Price = Convert.ToDouble(result.Split(':')[1]);
-            return Foods;
-
+            var resultSplited = result.Split(';');
+            return resultSplited;
         }
-
     }
 }

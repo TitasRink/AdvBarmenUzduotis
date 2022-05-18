@@ -10,15 +10,11 @@ namespace AdvBarmenUzduotis.repo
     public class Drink : Product
         
     {
-        public override string[] returnValue()
-        {   
-            
+        public override string[] ReturnValue()
+        {
             string result = File.ReadAllText(@"C:\temp\Drinks.txt");
-            Drinks = result.Split(';');
-            
-
-           
-            return Drinks;
+            var resultSplited = result.Split(';');
+            return resultSplited;
         }
     }
 }

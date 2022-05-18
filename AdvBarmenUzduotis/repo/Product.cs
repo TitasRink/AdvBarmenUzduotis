@@ -12,10 +12,10 @@ namespace AdvBarmenUzduotis.repo
         public double Price { get; set; }
 
         public string[] Drinks { get; set; }
-        public string[] Foods { get; set; }
+        public string[] Food { get; set; }
         public virtual string[] ReturnValue()
         {
-   
+            return Food;
         }
     }
 }
