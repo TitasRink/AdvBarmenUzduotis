@@ -9,6 +9,9 @@ namespace AdvBarmenUzduotis.repo
 {
     public class Food : Product
     {
+        public Food(string[] food, string[] drinks) : base(food, drinks)
+        {
+        }
 
         public override string[]  ReturnValue()
         {

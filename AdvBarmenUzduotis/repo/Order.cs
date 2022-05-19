@@ -9,25 +9,14 @@ namespace AdvBarmenUzduotis.repo
     public class Order
     {
         public List<Order> Orders { get; set; }
-
         public DateTime DateNow { get; set; }
-
-        
-
-     
-
-        public Order(DateTime dateNow)
-        {
-            
+        Product Product { get; set; }
+        public Order(DateTime dateNow, Product product)
+        {   
+            Product = product;
             DateNow = dateNow;
-           
+            Product = product;
+            product.ReturnValue();
         }
-    }
-    public interface IOrderRepository
-    {
-        string checkClient();
-        string checkRestoran();
-
-        string checkSendEmail();
     }
 }

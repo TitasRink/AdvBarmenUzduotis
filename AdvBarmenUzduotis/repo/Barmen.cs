@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace AdvBarmenUzduotis.repo
 {
-    public class Barmen: Client
+    public class Barmen
     {
-        public int Id { get; set; }
         public string Name { get; set; }
 
-        public Barmen(int id, string name): base(id, name)
+        public Barmen(string name)
         {
-            Id = id;
             Name = name;
         }
     }
-    
 }

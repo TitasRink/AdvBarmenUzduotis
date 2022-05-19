@@ -10,6 +10,10 @@ namespace AdvBarmenUzduotis.repo
     public class Drink : Product
         
     {
+        public Drink(string[] food, string[] drinks) : base(food, drinks)
+        {
+        }
+
         public override string[] ReturnValue()
         {
             string result = File.ReadAllText(@"C:\temp\Drinks.txt");

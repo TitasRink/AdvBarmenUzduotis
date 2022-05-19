@@ -13,9 +13,18 @@ namespace AdvBarmenUzduotis.repo
 
         public string[] Drinks { get; set; }
         public string[] Food { get; set; }
+
+        public Product(string[] food, string[] drinks)
+        {
+            Food = food;
+            Drinks = drinks;
+        }
         public virtual string[] ReturnValue()
         {
-            return Food;
+
+            var result = Food.Concat(Drinks);
+            return (string[])result;
+            
         }
     }
 }
